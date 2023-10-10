@@ -1,0 +1,20 @@
+import tkinter
+window = tkinter.Tk()
+window.title('ㅇㅇ 프로젝트')
+window.geometry("320x200+100+100")
+window.resizable(False, False)
+frame1 = tkinter.Frame(window, relief='solid',bd=2)
+frame2 = tkinter.Frame(window, relief='solid',bd=2)
+frame1.pack()
+frame2.pack()
+
+a = tkinter.Label(frame1, text='1-A')
+b = tkinter.Label(frame1, text='1-B')
+c= tkinter.Label(frame2, text='2-C')
+d=tkinter.Label(frame2, text='2-D')
+
+a.pack()
+b.pack()
+c.grid(row=0,column=0)
+d.grid(row=0,column=1)
+window.mainloop()
